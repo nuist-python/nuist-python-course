@@ -1,0 +1,18 @@
+title: NUIST Python Course
+description: >-
+  This is a Python course for students of Nanjing University of Information
+  Science & Technology and Python fans.
+template:
+  repo: nuist-python-course-template
+  name: nuist-python-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
